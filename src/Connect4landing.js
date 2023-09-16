@@ -21,8 +21,7 @@ function Connect4Landing({ onStartGame }) {
           <button
             className="w-48 h-12 bg-cyan-600 hover:bg-slate-700 text-white font-semibold rounded-full transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-slate-500"
             onClick={handleStartGame}
-          >
-            Start Game
+          > Start Game
           </button>
         </div>
       </div>
