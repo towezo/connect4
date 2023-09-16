@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Connect4Board from './Connect4Board';
 import WinnerPopup from './WinnerPopup';
-import Connect4TopBoard from './Connect4TopBoard';
 import Player from './Player';
 
 function Connect4react({ onQuitGame, player1Name, player2Name }) {
@@ -192,15 +191,6 @@ function Connect4react({ onQuitGame, player1Name, player2Name }) {
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen bg-slate-600">
 
-    <Connect4TopBoard
-          player1Name={player1Name}
-          player2Name={player2Name}
-          player1Wins={player1Wins}
-          player2Wins={player2Wins}
-          currentPlayer={currentPlayer}
-          winners={winners}
-          winner={winner} />
-
     <div className="flex justify-between w-full px-4">
             {/* Display Player 1 */}
             <div className="flex justify-center items-center w-1/4 pl-4">
@@ -226,6 +216,7 @@ function Connect4react({ onQuitGame, player1Name, player2Name }) {
 
     {showWinnerPopup && (
         <WinnerPopup
+        winners={winners}
         winner={winner}
         player1Name={player1Name}
         player2Name={player2Name}
