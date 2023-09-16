@@ -197,7 +197,6 @@ function Connect4react({ onQuitGame, player1Name, player2Name }) {
     <h1 className="text-2xl font-bold text-white mb-4">Connect 4 </h1>
    */}
 
-
     <Connect4TopBoard
           player1Name={player1Name}
           player2Name={player2Name}
