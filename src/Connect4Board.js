@@ -16,8 +16,6 @@ const Connect4Board = ({ board, handleCellClick }) => {
         ))}
       </div>
     </div>
-  
-  
   );
 };
 
