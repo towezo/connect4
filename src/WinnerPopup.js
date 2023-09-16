@@ -7,8 +7,7 @@ function WinnerPopup({ player1Wins, player2Wins, winners, winner, player1Name, p
   return (
     <div className="grid gap-4 p-4 bg-gray-500 bg-opacity-70 w-1/2 h-1/2 rounded shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
    
-         <FontAwesomeIcon icon={faTrophy} className="text-6xl text-pink-400"
-         />
+         <FontAwesomeIcon icon={faTrophy} className="text-6xl text-pink-400"/>
 
       <div className="flex justify-center text-xl font-semibold">{winner === 'red' ? player1Name : player2Name} wins!</div>
 
