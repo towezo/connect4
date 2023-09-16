@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrophy, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faTrophy } from '@fortawesome/free-solid-svg-icons';
 
 function WinnerPopup({ winner, player1Name, player2Name, onNewGame, onQuitGame }) {
   return (

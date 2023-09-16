@@ -1,8 +1,7 @@
 import React from "react";
 import Connect4winnerboard from './Connect4winnerboard';
-import Player from './Player';
 
-function Connect4TopBoard({ player1Name, player2Name, player1Wins, player2Wins, currentPlayer, winners, winner }) {
+function Connect4TopBoard({ player1Name, player2Name, player1Wins, player2Wins, winners, winner }) {
 
     return(
     <div className='  h-1/3 '> 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './player.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrophy, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Player({ name, wins, isCurrentPlayer }) {
   return (
