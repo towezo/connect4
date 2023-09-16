@@ -28,8 +28,8 @@ jobs:
         env:
           GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
         run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "GitHub Actions"
+          git config --global user.email "thiespooch@icloud.com"
+          git config --global user.name "towezo"
           git checkout gh-pages || git checkout --orphan gh-pages
           git rm -r .
           cp -r build/. .
