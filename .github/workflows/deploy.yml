@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - connect4
 
 jobs:
   build:
@@ -24,21 +24,19 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Check if gh-pages branch exists
+      - name: Deploy to GitHub Pages
+        env:
+          GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
         run: |
           git config --global user.email "${{ secrets.GH_EMAIL }}"
           git config --global user.name "${{ secrets.GH_USERNAME }}"
+          set -e  # Beenden Sie den Workflow bei Fehlern
           if ! git show-ref --verify --quiet "refs/heads/gh-pages"; then
             git checkout --orphan gh-pages
             git commit --allow-empty -m "Initialize gh-pages branch"
             git push -f origin gh-pages
           fi
-
-      - name: Deploy to GitHub Pages
-        env:
-          GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
-        run: |
-          # Kopieren Sie hier Ihre Build-Dateien
+          # Kopieren Sie Ihre Build-Dateien und verwenden Sie actions/gh-pages
           cp -r build/. .
           git add .
           git commit -m "Deploy to GitHub Pages"
