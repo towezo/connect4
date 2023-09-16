@@ -34,7 +34,7 @@ function Connect4react({ onQuitGame, player1Name, player2Name }) {
   
     if (rowIndex !== -1) {
       updatedBoard[rowIndex][colIndex] = currentPlayer;
-      
+    
       // Check for a win or a draw here (you'll need to implement this logic)
       const winnerName = checkWinner(updatedBoard, currentPlayer, rowIndex, colIndex);
   
