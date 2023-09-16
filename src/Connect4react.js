@@ -42,8 +42,6 @@ function Connect4react({ onQuitGame, player1Name, player2Name }) {
         // If there's a winner, set the winner and show the popup
         setWinner(winnerName);
         setShowWinnerPopup(true);
-
-
       } else {
         // Otherwise, continue the game
         setBoard(updatedBoard);
