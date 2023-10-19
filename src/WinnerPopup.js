@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy } from '@fortawesome/free-solid-svg-icons';
-import Connect4Winnerboard from './Connect4Winnerboard';
+import Connect4Winnerboard from './Connect4winnerboard';
 
 function WinnerPopup({ player1Wins, player2Wins, winners, winner, player1Name, player2Name, onNewGame, onQuitGame }) {
   return (
