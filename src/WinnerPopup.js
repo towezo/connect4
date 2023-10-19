@@ -15,7 +15,6 @@ function WinnerPopup({ player1Wins, player2Wins, winners, winner, player1Name, p
           <div className=' '> 
               <Connect4Winnerboard winners={winners} winner={winner} player1Name={player1Name} player2Name={player2Name} player1Wins={player1Wins} player2Wins={player2Wins} />
           </div>
-
       </div>
 
       <div className="flex justify-center">
